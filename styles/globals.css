@@ -1,0 +1,218 @@
+*,::after,::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+body{
+  overflow: hidden;
+}
+.display{
+ 
+ display: flex; 
+ flex-direction: row;
+ width: 100%;
+} 
+
+.Home{
+  background-image: url('/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction:row;
+}
+.stick-mid{
+  width: 18px;
+  height: 100vh;
+  background-color: #A7989E;
+
+  word-break: break-word;
+
+}
+.stick-mid p{
+  font-size: 80px;
+  font-family: 'Ink Free';
+   
+  color: #F9EBEF;
+  position: relative;
+  left: -80%;
+  margin-bottom: 100px;
+}
+.stick-mid p.Inter{
+  font-size: 90px;
+}
+ 
+.cait-box,.vi-box{
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.cait-box .cait-btn,.vi-box .vi-btn{
+
+  width: 54%;
+  height: 80px;
+  cursor: pointer;
+
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+
+  background-color: #BC3F61;
+  color: #FFFFFF;
+  filter: drop-shadow(10px 14px 4px rgba(185, 29, 72, 0.22));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+/*******choose=cait*/
+.H-cait{   
+  cursor: pointer;
+ 
+  width:400px;
+ border-left: 80px solid #BFBFBF;
+ background-position:-18rem ; 
+}
+.H-cait .cait-btn,.H-cait  .vi-btn{
+  display: none;
+}
+.H-cait::before{
+
+  content: "CAITLYNE SIDE";  transform: translateY(50%);
+  transform: rotate(-90deg);
+
+  position: relative;
+  font-size: 60px;
+  font-family: sans-serif;
+  left: -275px;
+  top: 50%;
+  color: #BC3F61;
+  height: 40px;
+ 
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+ 
+  white-space: nowrap; /* Prevents content from breaking into multiple lines */
+  word-spacing: 20px;
+}
+.H-cait .stick-mid{
+  display: none;
+}
+.cait-slider{
+  display: flex;
+  flex-direction: row-reverse;
+
+  width: 100%;
+}
+.cait.disable{
+  width: 30%;
+ 
+}
+
+.cait2.disable img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Crop the image to cover the container */
+ object-position: -900px;
+}
+.cait3.disable img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Crop the image to cover the container */
+ object-position: -1200px;
+}
+.cait.active{
+  width: 70%;
+}
+ 
+.cait3.active img {
+  width: 100%;  height: 100vh;  object-fit: cover;  border-right: 40px solid #DF2089; object-position: -600px;
+}
+.cait2.active img {
+  width: 100%;  height: 100vh;  object-fit: cover;  border-left: 40px solid #5287B2; object-position: -300px;
+}
+/*******choose=vi*/ 
+.display.d-vi{
+  flex-direction: row-reverse;
+}
+
+.H-vi{   
+cursor: pointer;
+ 
+width:400px;
+ border-right: 80px solid #BFBFBF;
+ background-position:25rem ; 
+ 
+} 
+.H-vi .cait-btn,.H-vi  .vi-btn{
+  display: none;
+}
+
+ 
+.H-vi::before{
+
+  content: "VI SIDE";  transform: translateY(50%);
+  transform: rotate(-90deg);
+
+  position: relative;
+  font-size: 60px;
+  font-family: sans-serif;
+  left: 160px;
+  top: 50%;
+  color: #BC3F61;
+  height: 40px;
+ 
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+ 
+  white-space: nowrap; /* Prevents content from breaking into multiple lines */
+  word-spacing: 20px;
+}
+.H-vi .stick-mid{
+  display: none;
+}
+.vi-slider{
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.vi-slider{
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.vi.disable{
+  width: 30%;
+ 
+}
+.vi2.disable img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Crop the image to cover the container */
+ object-position: -900px;
+}
+.vi3.disable img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Crop the image to cover the container */
+ object-position: -900px;
+}
+.vi.active{
+  width: 70%;
+}
+.vi3.active img  {
+  width: 100%;  height: 100vh;  object-fit: cover;  border-left: 40px solid #AB7449; object-position: -300px;
+}
+.vi2.active img{
+  width: 100%;  height: 100vh;  object-fit: cover;  border-right: 40px solid #3D342D; object-position: -600px;
+}
